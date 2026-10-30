@@ -1,0 +1,23 @@
+[Unit]
+Description=Auvyn Apies - IP Center bridge
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=auvyn
+Group=auvyn
+WorkingDirectory=/opt/auvyn-apies
+EnvironmentFile=/opt/auvyn-apies/.env
+ExecStart=/opt/auvyn-apies/auvyn
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/auvyn-apies/data
+LimitNOFILE=4096
+
+[Install]
+WantedBy=multi-user.target

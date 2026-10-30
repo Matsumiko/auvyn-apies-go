@@ -1,0 +1,20 @@
+# Build output
+/auvyn
+
+# Local data (SQLite, WAL, backups)
+/data/
+*.db
+*.db-shm
+*.db-wal
+
+# Environment
+.env
+.env.local
+
+# Logs
+*.log
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
