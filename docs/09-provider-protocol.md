@@ -14,7 +14,7 @@ Dokumen ini menjelaskan protokol **keluar** ke IP Center. Bagian ini beku: perub
 ## Signature
 
 ```text
-prefix   = SIGN_PREFIX (default "ENGINE")
+prefix   = SIGN_PREFIX (default "OtomaX")
 template = prefix | memberId | product | dest | refID | pin | password
 sign     = base64url(sha1(template))
 ```
@@ -28,10 +28,10 @@ Test vector:
 
 | Kasus | Input | Expected |
 |---|---|---|
-| TRX | `ENGINE`, `AG000001`, `PULSA10`, `081234567890`, `AVN1750000000000`, `0000`, `Secret123` | `iYvFqEokeut7u5lFWG60-MH1OWc` |
-| TRX + nominal 15000 | sama + `\|15000` | `LIQfj8k2qTHiEGHUpy0y8-84jPY` |
-| Saldo | `ENGINE|CheckBalance|AG000001|0000|Secret123` | `xsqtqJgRRgn0Eirf-6KCnKNL01o` |
-| Tiket | `ENGINE|ticket|AG000001|0000|Secret123|50000` | `K7rt5-vC7HGg9iSeerIE0gjF_lE` |
+| TRX | `OtomaX`, `AG000001`, `PULSA10`, `081234567890`, `AVN1750000000000`, `0000`, `Secret123` | `8_Zele0sMVhYb4yL4fwgjZkZXJU` |
+| TRX + nominal 15000 | sama + `\|15000` | `12YsOt5QUNbCFIpIq1Za_jksP4k` |
+| Saldo | `OtomaX|CheckBalance|AG000001|0000|Secret123` | `2AIDNKCrNfMWyluKvxfIvKFOVuA` |
+| Tiket | `OtomaX|ticket|AG000001|0000|Secret123|50000` | `OXWJYU5f9GCVqBPopmPiybHLvpw` |
 
 Vector ini diuji di `internal/ipcenter/sign_test.go`.
 

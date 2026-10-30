@@ -35,6 +35,7 @@ Dokumentasi ditulis dalam Bahasa Indonesia. Semua contoh memakai nilai dummy:
 | [18 — Kode error](18-error-codes.md) | Katalog kode error per surface |
 | [19 — Glosarium](19-glossary.md) | Istilah domain dan teknis |
 | [20 — Protokol Otomax](20-otomax-protocol.md) | Ringkasan protokol Otomax/IP Center + pemetaan ke project |
+| [21 — Format WhatsApp bot center](21-whatsapp-bot-center.md) | Format perintah WhatsApp bot center (dokumentasi operasional) |
 
 Dokumen pengikat di root repository:
 

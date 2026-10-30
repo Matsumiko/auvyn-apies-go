@@ -51,7 +51,7 @@ Catatan yang sering terlewat:
 ### 2.2 Signature
 
 ```
-prefix   = SIGN_PREFIX (default "ENGINE")
+prefix   = SIGN_PREFIX (default "OtomaX")
 template = prefix | memberId | product | dest | refID | pin | password
 sign     = base64url( sha1(template) )
 ```
@@ -66,9 +66,9 @@ Test vector (wajib ada di unit test Go dan harus identik):
 
 | Kasus | Input | Expected `sign` |
 |---|---|---|
-| TRX | `ENGINE`, `AG000001`, `PULSA10`, `081234567890`, `AVN1750000000000`, `0000`, `Secret123` | `iYvFqEokeut7u5lFWG60-MH1OWc` |
-| TRX + nominal 15000 | sama + `\|15000` | `LIQfj8k2qTHiEGHUpy0y8-84jPY` |
-| Saldo / tiket | `ENGINE`, `AG000001`, `0000`, `Secret123` | `yT5C3r-ccaz2LuvQfgeLImXj_Lo` |
+| TRX | `OtomaX`, `AG000001`, `PULSA10`, `081234567890`, `AVN1750000000000`, `0000`, `Secret123` | `8_Zele0sMVhYb4yL4fwgjZkZXJU` |
+| TRX + nominal 15000 | sama + `\|15000` | `12YsOt5QUNbCFIpIq1Za_jksP4k` |
+| Saldo / tiket | `OtomaX`, `AG000001`, `0000`, `Secret123` | `2AIDNKCrNfMWyluKvxfIvKFOVuA` |
 
 ### 2.3 Mode produk bebas nominal
 

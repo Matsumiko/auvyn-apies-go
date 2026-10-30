@@ -14,25 +14,25 @@ func TestBuildSignatureVectors(t *testing.T) {
 	}{
 		{
 			name: "trx",
-			got: BuildSignature("ENGINE", "AG000001", "PULSA10", "081234567890",
+			got: BuildSignature("OtomaX", "AG000001", "PULSA10", "081234567890",
 				"AVN1750000000000", "0000", "Secret123", nil, false),
-			want: "iYvFqEokeut7u5lFWG60-MH1OWc",
+			want: "8_Zele0sMVhYb4yL4fwgjZkZXJU",
 		},
 		{
 			name: "trx with nominal",
-			got: BuildSignature("ENGINE", "AG000001", "PULSA10", "081234567890",
+			got: BuildSignature("OtomaX", "AG000001", "PULSA10", "081234567890",
 				"AVN1750000000000", "0000", "Secret123", &nominal, true),
-			want: "LIQfj8k2qTHiEGHUpy0y8-84jPY",
+			want: "12YsOt5QUNbCFIpIq1Za_jksP4k",
 		},
 		{
 			name: "check balance",
-			got:  BuildCheckBalanceSignature("ENGINE", "AG000001", "0000", "Secret123"),
-			want: "xsqtqJgRRgn0Eirf-6KCnKNL01o",
+			got:  BuildCheckBalanceSignature("OtomaX", "AG000001", "0000", "Secret123"),
+			want: "2AIDNKCrNfMWyluKvxfIvKFOVuA",
 		},
 		{
 			name: "ticket",
-			got:  BuildTicketSignature("ENGINE", "AG000001", "0000", "Secret123", 50000),
-			want: "K7rt5-vC7HGg9iSeerIE0gjF_lE",
+			got:  BuildTicketSignature("OtomaX", "AG000001", "0000", "Secret123", 50000),
+			want: "OXWJYU5f9GCVqBPopmPiybHLvpw",
 		},
 	}
 	for _, tc := range cases {

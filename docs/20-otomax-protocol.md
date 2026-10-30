@@ -157,10 +157,10 @@ Pada produk bebas, nominal tidak dikirim dan tidak masuk signature.
 
 | Kasus | Template | Expected `sign` |
 |---|---|---|
-| Transaksi | `ENGINE\|AG000001\|PULSA10\|081234567890\|AVN1750000000000\|0000\|Secret123` | `iYvFqEokeut7u5lFWG60-MH1OWc` |
-| Transaksi + nominal 15000 | template di atas + `\|15000` | `LIQfj8k2qTHiEGHUpy0y8-84jPY` |
-| Cek saldo | `ENGINE\|CheckBalance\|AG000001\|0000\|Secret123` | `xsqtqJgRRgn0Eirf-6KCnKNL01o` |
-| Tiket 50000 | `ENGINE\|ticket\|AG000001\|0000\|Secret123\|50000` | `K7rt5-vC7HGg9iSeerIE0gjF_lE` |
+| Transaksi | `OtomaX\|AG000001\|PULSA10\|081234567890\|AVN1750000000000\|0000\|Secret123` | `8_Zele0sMVhYb4yL4fwgjZkZXJU` |
+| Transaksi + nominal 15000 | template di atas + `\|15000` | `12YsOt5QUNbCFIpIq1Za_jksP4k` |
+| Cek saldo | `OtomaX\|CheckBalance\|AG000001\|0000\|Secret123` | `2AIDNKCrNfMWyluKvxfIvKFOVuA` |
+| Tiket 50000 | `OtomaX\|ticket\|AG000001\|0000\|Secret123\|50000` | `OXWJYU5f9GCVqBPopmPiybHLvpw` |
 
 Vector diuji di `internal/ipcenter/sign_test.go`.
 
@@ -377,3 +377,4 @@ Tanpa ketiganya, perlakukan sebagai bug implementasi, bukan izin mengubah protok
 | Report domain | Teruji live, `accepted=1` |
 | Parser `#trxid PRODUCT.dest` | Teruji live |
 | Format `kodeproduk/tujuan/trxid` | Tidak dipakai provider aktual |
+| Format WhatsApp bot center | Lihat [21 — Format WhatsApp bot center](21-whatsapp-bot-center.md) |

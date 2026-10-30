@@ -104,7 +104,7 @@ func Load() (*Config, error) {
 		MemberID:   get("MEMBER_ID", ""),
 		PIN:        getRaw("PIN", ""),
 		Password:   getRaw("PASSWORD", ""),
-		SignPrefix: get("SIGN_PREFIX", "ENGINE"),
+		SignPrefix: get("SIGN_PREFIX", "OtomaX"),
 
 		AuvynSecret: getRaw("AUVYN_SECRET", ""),
 		AdminSecret: getRaw("ADMIN_SECRET", ""),

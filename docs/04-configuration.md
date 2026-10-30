@@ -23,7 +23,7 @@ Nilai kredensial dan secret dibaca apa adanya (whitespace dipertahankan). Nilai 
 | `MEMBER_ID` | — | **ya** | ID agen di provider. |
 | `PIN` | — | **ya** | PIN agen. |
 | `PASSWORD` | — | **ya** | Password provider. |
-| `SIGN_PREFIX` | `ENGINE` | tidak | Prefix signature, case-sensitive. Ikuti provider. |
+| `SIGN_PREFIX` | `OtomaX` | tidak | Prefix signature, case-sensitive. Ikuti provider. |
 | `SIGN_INCLUDE_NOMINAL` | `false` | tidak | Tambahkan nominal ke template signature untuk transaksi non-bebas. |
 | `EWALLET_BEBAS_PRODUCTS` | kosong | tidak | Daftar kode produk nominal-bebas, dipisah koma; pencocokan case-insensitive. |
 | `EWALLET_BEBAS_QTY_IS_NOMINAL` | `true` | tidak | Jika true, `qty = nominal`; jika false, `qty = floor(nominal/unit)`. |
@@ -123,7 +123,7 @@ CENTER_URL=http://203.0.113.10:6969
 MEMBER_ID=AG000001
 PIN=0000
 PASSWORD=change-me
-SIGN_PREFIX=ENGINE
+SIGN_PREFIX=OtomaX
 
 AUVYN_SECRET=change-me-to-a-long-random-string
 ADMIN_SECRET=admin-secret

@@ -51,7 +51,7 @@ Wajib: `CENTER_URL`, `MEMBER_ID`, `PIN`, `PASSWORD`, `AUVYN_SECRET`.
 | `PORT` | `5882` | |
 | `CENTER_URL` | — | Base URL IP Center |
 | `MEMBER_ID`, `PIN`, `PASSWORD` | — | Kredensial agen |
-| `SIGN_PREFIX` | `ENGINE` | Prefix signature provider |
+| `SIGN_PREFIX` | `OtomaX` | Prefix signature provider |
 | `AUVYN_SECRET` | — | Auth operasional `/api/ping`, `/api/balance`, `/api/ticket-mbal` |
 | `ADMIN_SECRET`, `ADMIN_PIN`, `ADMIN_KEYS` | — | Auth `/admin/*` |
 | `DATA_DIR` | `./data` | |
